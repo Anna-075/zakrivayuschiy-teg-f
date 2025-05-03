@@ -9,3 +9,124 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+@keyframes increase {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.25);
+    }
+}
+
+.button__decor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    transition: transform .5s ease-in-out;
+}
+  
+.button__decor:hover::before {
+    transform: translateX(100%);
+}
+  
+.button__decor:focus {
+    outline: none ;
+    box-shadow: 2px 2px 0 var(--main-color);
+    transform: translate(0, 0);
+}
+
+.button__decor:focus-visible {
+    outline: none;
+}
+
+.is-liked .heart {
+    animation: increase .3s .1s ease-in ;
+}
+
+@keyframes flash {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+.heart {
+    transform-origin: center;
+}
+  
+.contour {
+    transition: fill .1s linear;
+}
+  
+.like-icon.is-liked .contour {
+    fill: var(--accent-like-color);
+    transition: fill .3s .06s;
+}
+  
+.main-body {
+    fill: transparent;
+    transition: fill .3s .0s;
+}
+  
+.like-icon:hover .main-body{
+    fill: var(--main-like-color);
+    transition: fill .3s .05s;
+}
+  
+.like-icon:active .main-body{
+    fill: var(--accent-like-color);
+    transition: fill .3s .05s;
+}
+  
+.like-icon.is-liked .main-body {
+    fill: var(--accent-like-color);
+    transition: fill .3s .05s;
+}
+  
+.core {
+    fill: transparent;
+    transition: fill .3s .03s;
+}
+  
+.like-icon:hover .core{
+    fill: var(--main-like-color);
+    transition: fill .3s 0s;
+}
+  
+.like-icon:active .core{
+    fill: var(--accent-like-color);
+    transition: fill .3s 0s;
+}
+  
+.like-icon.is-liked .core {
+    fill: var(--accent-like-color);
+    transition: fill .3s 0s;
+}
+  
+.sparks {
+    opacity: 0;
+}
+  
+.is-liked .sparks {
+    animation: flash .3s .3s ease-in;
+}
+  
+.card__like-button {
+    padding: 10.5px 35px 8px;
+    line-height: 13px;
+}
+
+.card__icon-button:focus-visible {
+    height: 36px;
+    border: 2px solid var(--main-color);
+}
