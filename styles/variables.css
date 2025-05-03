@@ -4,14 +4,14 @@
     --main-font: 'Inter-Variable';
     --weight-title-card: 700;
     --weight-text-card: 400;
-    --background-gradient: 
-        repeating-linear-gradient(to right, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
-        repeating-linear-gradient(to bottom, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
-        linear-gradient(to bottom, #e7e7e7 0px, #e7e7e7 0.01%, #1a1a1a);
     --background-color: #fff;
     --text-decor: rgba(255, 255, 255, .5);;
     --main-color: #000;
     --decor-color: #fff;
     --main-like-color: #000;
     --accent-like-color: #ff0000;
+    --background-gradient: 
+        repeating-linear-gradient(to right, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
+        repeating-linear-gradient(to bottom, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
+        linear-gradient(to bottom, #e7e7e7 0px, #e7e7e7 0.01%, #1a1a1a);
 }
