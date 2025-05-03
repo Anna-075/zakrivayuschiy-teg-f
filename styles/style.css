@@ -85,10 +85,10 @@
   
 }
 
-@supports((text-stroke: 1px var(--text-decor)) or (-webkit-text-stroke: 1px var(--text-decor))) {
+@supports((-webkit-text-stroke: 1px var(--text-decor))) {
   .card__label {
     -webkit-text-stroke: 1px var(--text-decor);
-    text-stroke: 1px var(--text-decor);
+    /* text-stroke: 1px var(--text-decor);   (text-stroke: 1px var(--text-decor)) or */
     text-shadow: none;
   }
 } 
