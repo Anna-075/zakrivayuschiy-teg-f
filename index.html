@@ -337,18 +337,18 @@
         </svg>
         <span class=".footer__button-text button__text">Сохранить на память</span>
       </button>
+      <dialog class="modal" id="modal">
+        <div class="modal__info">
+          <svg class="button-floppy" width="39" height="39" viewBox="0 0 39 39">
+            <use href="#floppyDisk"></use>
+          </svg>
+          <p class="modal__text">Вставьте дискету, чтобы продолжить</p>
+        </div>
+        <button class="modal__dialog-button button__decor" type="button" onclick="window['modal'].close()">
+          <span class="modal__button-text button__text">Ок</span>
+        </button>
+      </dialog>
     </footer>
-    <dialog class="modal" id="modal">
-      <div class="modal__info">
-        <svg class="button-floppy" width="39" height="39" viewBox="0 0 39 39">
-          <use href="#floppyDisk"></use>
-        </svg>
-        <p class="modal__text">Вставьте дискету, чтобы продолжить</p>
-      </div>
-      <button class="modal__dialog-button button__decor" type="button" onclick="window['modal'].close()">
-        <span class="modal__button-text button__text">Ок</span>
-      </button>
-    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
