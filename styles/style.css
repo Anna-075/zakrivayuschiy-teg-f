@@ -147,11 +147,12 @@
   transition: box-shadow .4s ease;
 }
 
-.floppy {
+.button-floppy {
   position: relative;
   z-index: 1;
-  fill: var(--decor-color);
+  color: var(--decor-color);
   mix-blend-mode: difference;
+   
 }
 
 .footer {
@@ -166,11 +167,6 @@
   gap: 7px;
   margin: auto;
   padding: 15px 20px;
-}
-
-.button-floppy {
-  width: 28px;
-  height: 28px;
 }
 
 .modal {
